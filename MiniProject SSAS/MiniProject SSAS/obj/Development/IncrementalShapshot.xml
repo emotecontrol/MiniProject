@@ -1,0 +1,89 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>MiniProject SSAS</Database>
+    <Server>localhost</Server>
+    <ConnectionString>DataSource=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>Hp41a+LSSXoZnk7Fuf+tQU8ZBck=2014-12-13 10:08:50 AM2014-12-13 10:08:50 AM</TimeStamp>
+        <ID>
+          <String>Mini Project</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>eCF5fGzVjRjR5tSF193b0eA5g5U=2014-12-13 11:29:59 AM2014-12-13 11:29:59 AM</TimeStamp>
+        <ID>
+          <String>Mini Project</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>iCJss3v32jtJ+v/za/n0XcBUSKM=2014-12-13 11:30:23 AM2014-12-13 11:30:23 AM</TimeStamp>
+        <ID>
+          <String>Dim Client</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>6oSkGexNk+r8vXvfdVz80R/rZ8o=2014-12-13 11:30:23 AM2014-12-13 11:30:23 AM</TimeStamp>
+        <ID>
+          <String>Dim Subject</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>8FmXAfKzg+9sm/zD9fxd5uWyPeU=2014-12-13 11:30:23 AM2014-12-13 11:30:23 AM</TimeStamp>
+        <ID>
+          <String>Dim Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>5lv/YUF+Atb1z+bLMuZdUBsvIWw=2014-12-13 11:30:23 AM2014-12-13 11:30:23 AM</TimeStamp>
+        <ID>
+          <String>Dim Sender</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>3GJm+Qfj6D8DlgGADsSQ3EkmFVU=2014-12-13 11:30:23 AM2014-12-13 11:30:23 AM</TimeStamp>
+        <ID>
+          <String>Dim Insitutions</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>mINdGzqouGXvfvHk6vmbj0QRpa0=2014-12-13 11:30:23 AM2014-12-13 11:30:23 AM8RrgGM8ZAKx/V492+qEUNeB9TY0=2014-12-13 11:30:23 AM2014-12-13 11:30:23 AM</TimeStamp>
+        <ID>
+          <String>Mini Project</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>WLANc73+h9YgQUTU5qphYHZAWsk=2014-12-13 10:07:49 AM2014-12-13 10:07:48 AM</TimeStamp>
+      <ID>
+        <String>MiniProject SSAS</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2014-12-13T16:31:12Z</LastDeployed>
+</DeploymentSnapshot>

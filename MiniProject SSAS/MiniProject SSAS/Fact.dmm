@@ -1,0 +1,218 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="66740f2f-2b11-460e-ba22-1310f83270d5" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Fact</ID>
+  <Name>Fact</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>dbo_Fact</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="0b5f8521-0d4c-41d0-a86f-628fab3b911f">
+    <DataSourceViewID>Mini Project</DataSourceViewID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="5548e12b-d118-401a-b654-461a0be31e39">
+      <ID>Cost</ID>
+      <Name>Cost</Name>
+      <Type>Double</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1c4ef2a6-8242-4a8a-ae46-694bf19319d8">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2e8bbff2-e67c-4ae2-9a27-240e4596fcdb">
+            <TableID>dbo_Fact</TableID>
+            <ColumnID>Cost</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="3964e99d-2788-4b4a-b691-208bc5c4dd76">
+      <ID>Count</ID>
+      <Name>Count</Name>
+      <IsKey>true</IsKey>
+      <Type>Long</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="afb59f38-4e61-4784-bc4c-1738e6b6047d">
+          <DataType>BigInt</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d3128dc8-9437-4b30-8c60-b6f7b19c8ca9">
+            <TableID>dbo_Fact</TableID>
+            <ColumnID>Count</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="68159039-c483-41eb-b245-3e5c828fb576">
+      <ID>Dim Client ID</ID>
+      <Name>Dim Client ID</Name>
+      <Type>Long</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3f321602-2819-421a-b26d-39b10c82add2">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9fb83a92-ec21-4097-b07a-bff2811a4e7a">
+            <TableID>dbo_Fact</TableID>
+            <ColumnID>DimClientID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="d2c11051-0c66-4184-9d4e-478cf59253cf">
+      <ID>Dim Date ID</ID>
+      <Name>Dim Date ID</Name>
+      <Type>Long</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="86f3455d-af68-4461-9924-f79c13f6b399">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="72097988-42ce-435e-b70d-d4cb33ee5999">
+            <TableID>dbo_Fact</TableID>
+            <ColumnID>DimDateID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="8555e829-cce9-4224-9055-5f17d0c37796">
+      <ID>Dim Insitution ID</ID>
+      <Name>Dim Insitution ID</Name>
+      <Type>Long</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="35573d45-2ffb-4be3-80a9-51dd1261d712">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d999bd2f-190b-455e-95d8-3d75994e8a4a">
+            <TableID>dbo_Fact</TableID>
+            <ColumnID>DimInsitutionID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c5383393-e1d8-4499-b679-3dd21bf51c60">
+      <ID>Dim Sender ID</ID>
+      <Name>Dim Sender ID</Name>
+      <Type>Long</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e30f8963-52b2-4129-9e0c-da1120bcc787">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b3d3bad2-da04-4671-9210-c0fc3b2100f4">
+            <TableID>dbo_Fact</TableID>
+            <ColumnID>DimSenderID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="e063997c-b1da-4d88-97c7-e6661cbc70df">
+      <ID>Dim Subject ID</ID>
+      <Name>Dim Subject ID</Name>
+      <Type>Long</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2eb9911b-ac53-4b21-9fad-00516b2673c2">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="487397bc-fa6a-45bd-9a91-082e249c94ca">
+            <TableID>dbo_Fact</TableID>
+            <ColumnID>DimSubjectID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="c48947ce-dac5-4d20-843d-586334f02ceb">
+      <ID>Fact</ID>
+      <Name>Fact</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Decision_Trees</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="92b854a9-09f4-4eca-9940-de6d6e62ff29">
+          <ID>Cost</ID>
+          <Name>Cost</Name>
+          <SourceColumnID>Cost</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="54fc4aff-93b4-4511-813f-28ca795bff88">
+          <ID>Count</ID>
+          <Name>Count</Name>
+          <SourceColumnID>Count</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="6cb8a009-75d4-4364-ac6f-e09e3b0c7d12">
+          <ID>Dim Client ID</ID>
+          <Name>Dim Client ID</Name>
+          <SourceColumnID>Dim Client ID</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="c1e7ab7d-e7c6-4df8-859b-880bc60dd758">
+          <ID>Dim Date ID</ID>
+          <Name>Dim Date ID</Name>
+          <SourceColumnID>Dim Date ID</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="378ce629-e283-4d44-b405-1690eb50f444">
+          <ID>Dim Insitution ID</ID>
+          <Name>Dim Insitution ID</Name>
+          <SourceColumnID>Dim Insitution ID</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="a2493b5f-909a-4fed-b6cb-ae6db4548411">
+          <ID>Dim Sender ID</ID>
+          <Name>Dim Sender ID</Name>
+          <SourceColumnID>Dim Sender ID</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="456a24cb-9f85-46a6-86b8-80f901918747">
+          <ID>Dim Subject ID</ID>
+          <Name>Dim Subject ID</Name>
+          <SourceColumnID>Dim Subject ID</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+</MiningStructure>
